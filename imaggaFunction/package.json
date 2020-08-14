@@ -1,0 +1,15 @@
+{
+  "name": "41200-final-project",
+  "version": "1.0.0",
+  "description": "Final Project for CIT 41200",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chandler Talbot & Kevin Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^4.7.0",
+    "mongodb": "^3.5.6"
+  }
+}

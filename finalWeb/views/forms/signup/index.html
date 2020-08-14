@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIT 41200 Final</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <form method="POST" action="/signup">
+    <input type='hidden' name='type' value='signup'>
+        First Name:<br/>
+        <input type="text" name="first_name" id="first_name"/>
+        Last Name:<br/>
+        <input type="text" name="last_name" id="last_name"/>
+        Email:<br/>
+        <input type="email" name="username" id="email"/>
+        Password:<br/>
+        <input type="password" name="password" id="password"/>
+        Confirm Password:<br/>
+        <input type="password" name="confirm-password" id="confirm-password"/>
+        <input type="submit" value="Submit">
+
+        <a href='https://cit-41200-final-project-272919.uc.r.appspot.com/signin'>Already a user?</a>
+        <a href='https://cit-41200-final-project-272919.uc.r.appspot.com/signin/google'>Sign in with Google</a>
+    </form>
+</body>
+</html>

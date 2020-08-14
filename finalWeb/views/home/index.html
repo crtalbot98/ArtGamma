@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIT 41200 Final</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<nav>
+    <button class='side-bar-btn'><p>Login</p></button>
+    <button class='create-btn'><p>Create drawing</p></button>
+</nav>
+<body>
+
+    <div class='side-bar hide'>
+    <button class='close-side-bar'>X</button>
+    <h4 class='user-email'>Email</h4>
+    <h4 class='user-name'>Name</h4>
+    <h4><a href='https://cit-41200-final-project-272919.uc.r.appspot.com/user/logout'>Logout</a></h4>
+
+    <h4>Your drawings</h4>
+
+  </div> 
+
+ <div class='drawing-cont'>
+
+ </div>
+
+ <div class='drawing-popUp display-none'>
+    <div class='canvas-container'>
+        <div class='stencils'>
+            <div class='stencils-drag'></div>
+            <div class='item-cont'>
+                <input type="color" id="color" name="color">
+                <button id="fillCanvas">Fill</button>
+            </div>
+            <div>
+                <select id="stencilType" type="dropdown">
+                    <option value="pencil">Pencil</option>
+                    <option value="spray">Spray</option>
+                    <option value="eraser">Eraser</option>
+                </select>
+                <button id="clearCanvas">Clear</button>
+            </div>
+            <p>pencil size</p>
+            <input class='st-size' type="range" min="1" max="10" value="1">
+            <p>eraser size</p>
+            <input class='er-size' type="range" min="10" max="100" value="10">
+            <input type="text" name="drawingName" id="drawingName" placeholder="Drawing name">
+            <div>
+                <button id="saveCanvas">Save</button>
+                <button class="close-popUp">Exit</button>
+            </div>
+        </div>
+        <canvas id="canvas">
+
+        </canvas>
+    </div>
+ </div>
+
+<script type="module" src="fetch-drawings.js"></script>
+<script type="module" src="modules/draw-styles.js"></script>
+<script type="module" src="modules/drawing-editor.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

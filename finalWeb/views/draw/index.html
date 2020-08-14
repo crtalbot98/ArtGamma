@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIT 41200 Final</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <input type="color" id="color" name="color">
+    <input type="range" min="0.25" max="25" value="1">
+    <select id="stencilType" type="dropdown">
+        <option value="pencil">Pencil</option>
+        <option value="spray">Spray</option>
+    </select>
+    <button id="fillCanvas">Fill</button>
+    <input type="text" name="drawingName" id="drawingName" placeholder="Drawing name">
+    <button id="clearCanvas">Clear</button>
+    <button id="saveCanvas">Save</button>
+
+    <canvas id="canvas">
+
+    </canvas>
+
+    <p>Your drawings</p>
+    <div id="userDrawings">
+
+    </div>
+
+    <script type="module" src="modules/draw-styles.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
